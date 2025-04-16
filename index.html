@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RayLush</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <h1>RayLush</h1>
+      <nav>
+        <a href="#products" class="nav-btn">Products</a>
+        <a href="#about" class="nav-btn">About</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+    </div>
+    <button id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode">🌙</button>
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </header>
+
+  <div id="formContainer" style="display: none;">
+    <!-- Login Form -->
+    <div id="loginFormContainer" style="display: none;">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMessage"></p>
+    </div>
+    
+    <!-- SignUp Form -->
+    <div id="signupFormContainer" style="display: none;">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="signupMessage"></p>
+    </div>
+  </div>
+  
+  <script src="scripts/script.js"></script>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Glow Naturally With RayLush</h2>
+        <p>Made for all skin types. Trusted by thousands.</p>
+      </div>
+      <div class="hero-media">
+        <video src="/images/sunscreen.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <!-- 01 Sunscreen -->
+      <div class="section-label">Sunscreen</div>
+      <div class="product-row">
+        <div class="product-box">
+          <div class="product-num">01</div>
+          <img src="/images/s4.jpg" alt="Sunscreen" />
+          <p>Watermelon Cooling Hyaluronic Acid Sunscreen SPF 50+ PA++++
+            Oily & Combination Skin</p><br>
+          <p><b>only 599/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">02</div>
+          <img src="/images/b53250b9-ed60-4770-a89f-39d6ca2b1000.jfif" alt="Sunscreen 1" />
+          <p>Vitamin C + E Sunscreen, SPF 55+ PA++++
+            All skin types
+          </p><br>
+          <p><b>only 499/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">03</div>
+          <img src="/images/s3.jpg" alt="Sunscreen 2" />
+          <p>Barrier Repair Hydrating Sunscreen SPF 50+ PA++++
+          For Dry and Combination skin type
+          </p><br>
+          <p><b>only 559/-</b></p>
+        </div>
+      </div>
+
+      <!-- 02 Moisturizer -->
+      <div class="section-label">Moisturizer</div>
+      <div class="product-row">
+        <div class="product-box">
+          <div class="product-num">01</div>
+          <img src="/images/moisturizer.png" alt="Moisturizer" />
+          <p>Deep hydration with Aloe Vera</p><br>
+          <p><b>only 399/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">02</div>
+          <img src="/images/m2.jfif" alt="Moisturizer 2" />
+          <p>Vitamin E infused for glow</p><br>
+          <p><b>only 399/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">03</div>
+          <img src="/images/m3.jfif" alt="Moisturizer 3" />
+          <p>Perfect for oily & dry skin</p><br>
+          <p><b>only 459/-</b></p>
+        </div>
+      </div>
+
+      <!-- 03 Lip Balm -->
+      <div class="section-label">Lip Balm</div>
+      <div class="product-row">
+        <div class="product-box">
+          <div class="product-num">01</div>
+          <img src="/images/lipbalm.jpeg" alt="Lip Balm 1" />
+          <p>Strawberry tint for soft lips</p><br>
+          <p><b>only 259/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">02</div>
+          <img src="/images/lp2.jpg" alt="Lip Balm 2" />
+          <p>Mango burst with SPF 15</p><br>
+          <p><b>only 259/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">03</div>
+          <img src="/images/lp3.jpg" alt="Lip Balm 3" />
+          <p>Color-free natural balm</p><br>
+          <p><b>only 229/-</b></p>
+        </div>
+        <div class="product-box">
+          <div class="product-num">04</div>
+          <img src="/images/lp4.jpg" alt="Lip Balm 4" />
+          <p>Berry crush for intense moisture</p><br>
+          <p><b>only 259/-</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About RayLush</h2>
+      <p>
+        🌞 <strong>RayLush</strong> is more than skincare — it’s self-care made simple. We’re on a mission to create clean, effective, and feel-good products for <em>every skin type</em>.
+      </p>
+      <p>
+        🍃 Backed by nature and powered by science, our formulas are rich in antioxidants, vitamins, and hydration-boosting ingredients — no harsh chemicals, ever.
+      </p>
+      <p>
+        💧 Whether it’s our SPF-packed sunscreens, ultra-soothing moisturizers, or deliciously tinted lip balms — every RayLush product is made with ❤️ for your daily routine.
+      </p>
+      <p>
+        🧴 <strong>Trusted by over 50,000 happy users</strong><br />
+        🧪 Dermatologist-tested & cruelty-free<br />
+        ✅ Paraben-free • Sulfate-free • Kind to skin
+      </p>
+      <p>
+        ✨ Join the RayLush community and glow with confidence — naturally.
+      </p>
+    </div>
+  </section>
+
+  <!-- Place Order -->
+  <section class="order-section" id="contact">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+
+        <!-- Main product selection -->
+        <select name="product" id="mainProduct" required>
+          <option value="">Select a Product</option>
+          <option value="Sunscreen">Sunscreen</option>
+          <option value="Moisturizer">Moisturizer</option>
+          <option value="Lip Balm">Lip Balm</option>
+        </select>
+
+        <!-- Sub-variant selection (dynamic) -->
+        <select name="subProduct" id="subProduct" required style="display: none;">
+          <option value="">Select a Variant</option>
+        </select>
+
+        <input type="number" name="quantity" min="1" value="1" required />
+        <textarea name="address" placeholder="Delivery Address" required></textarea>
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="responseMsg"></p>
+    </div>
+  </section>
+
+  <section class="feedback-section" id="feedback">
+    <div class="container">
+      <h2>Leave Your Feedback 💬</h2>
+      <form id="feedbackForm">
+        <input type="text" name="username" placeholder="Your Name" required />
+        <textarea name="comment" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <div id="feedbackList"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>📧 Contact Us: <a href="mailto:support@raylush.com">support@raylush.com</a></p><br>
+      <p>&copy; 2025 RayLush. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
